@@ -1,0 +1,11 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome in {{ title }}
+  </h1>
+</div>
+<!--<input [(ngModel)]="str" type="text">-->
+<input #data type="text" (keyup)="fun(data.value)">
+
+<h3>Length of string: {{fun(data.value)}}</h3>
+
